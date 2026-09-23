@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Hoàng Hà Đông Y</title>
+  <meta name="description" content="Hoàng Hà Đông Y – tư vấn chăm sóc sức khỏe theo y học cổ truyền. Liên hệ nhanh qua Zalo, điện thoại, Messenger.">
+  <meta property="og:title" content="Hoàng Hà Đông Y">
+  <meta property="og:description" content="Tư vấn chăm sóc sức khỏe theo y học cổ truyền.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#7a2e1d">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <main class="wrap">
+    <header class="hero">
+      <div class="logo" aria-hidden="true">HH</div>
+      <h1>Hoàng Hà Đông Y</h1>
+      <p class="tagline">Chăm sóc sức khỏe theo y học cổ truyền</p>
+      <p class="from-tiktok" id="welcome" hidden>👋 Chào bạn đến từ TikTok!</p>
+    </header>
+
+    <nav class="links" aria-label="Liên hệ">
+      <a class="btn primary" data-cta="zalo" id="cta-zalo" href="#">💬 Nhắn Zalo tư vấn miễn phí</a>
+      <a class="btn" data-cta="call" id="cta-call" href="#">📞 Gọi điện ngay</a>
+      <a class="btn" data-cta="messenger" id="cta-messenger" href="#">✉️ Nhắn Messenger</a>
+      <a class="btn" data-cta="map" id="cta-map" href="#" target="_blank" rel="noopener">📍 Chỉ đường đến phòng khám</a>
+    </nav>
+
+    <section class="card">
+      <h2>Để lại thông tin, chúng tôi gọi lại</h2>
+      <form id="lead-form" novalidate>
+        <label>Họ tên
+          <input name="name" autocomplete="name" required>
+        </label>
+        <label>Số điện thoại
+          <input name="phone" type="tel" inputmode="tel" autocomplete="tel" required pattern="^(0|\+84)[0-9]{9}$">
+        </label>
+        <label>Bạn cần tư vấn về
+          <select name="topic">
+            <option>Xương khớp</option>
+            <option>Tiêu hóa</option>
+            <option>Mất ngủ</option>
+            <option>Bồi bổ sức khỏe</option>
+            <option>Khác</option>
+          </select>
+        </label>
+        <button class="btn primary" type="submit">Gửi thông tin</button>
+        <p class="form-msg" id="form-msg" role="status"></p>
+      </form>
+    </section>
+
+    <footer class="foot">
+      <p>Thông tin chỉ mang tính tham khảo, không thay thế chẩn đoán và điều trị của bác sĩ.</p>
+      <p><a href="https://www.tiktok.com/" id="tiktok-link" target="_blank" rel="noopener">Theo dõi trên TikTok</a></p>
+    </footer>
+  </main>
+
+  <script src="assets/config.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>

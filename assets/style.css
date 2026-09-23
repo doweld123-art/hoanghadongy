@@ -1,0 +1,58 @@
+:root {
+  --bg: #fbf6ee;
+  --card: #ffffff;
+  --text: #2b1d16;
+  --muted: #7d6a5d;
+  --brand: #7a2e1d;
+  --brand-2: #b8862b;
+  --border: #e8dccb;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1b1411;
+    --card: #261c18;
+    --text: #f3e9df;
+    --muted: #b9a697;
+    --brand: #c4583f;
+    --brand-2: #d9a84a;
+    --border: #3a2c25;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+.wrap { max-width: 480px; margin: 0 auto; padding: 32px 16px 48px; }
+.hero { text-align: center; margin-bottom: 24px; }
+.logo {
+  width: 88px; height: 88px; margin: 0 auto 12px; border-radius: 50%;
+  display: grid; place-items: center;
+  background: var(--brand); color: #fff; font-weight: 700; font-size: 28px;
+  border: 3px solid var(--brand-2);
+}
+h1 { margin: 0; font-size: 26px; }
+h2 { margin: 0 0 12px; font-size: 18px; }
+.tagline { margin: 4px 0 0; color: var(--muted); }
+.from-tiktok { margin: 12px 0 0; font-weight: 600; color: var(--brand); }
+.links { display: grid; gap: 12px; margin-bottom: 24px; }
+.btn {
+  display: block; width: 100%; padding: 14px 16px; border-radius: 12px;
+  border: 1px solid var(--border); background: var(--card); color: var(--text);
+  text-align: center; text-decoration: none; font-weight: 600; font-size: 16px;
+  cursor: pointer;
+}
+.btn.primary { background: var(--brand); border-color: var(--brand); color: #fff; }
+.btn:active { transform: scale(0.98); }
+.card { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 20px; }
+form { display: grid; gap: 12px; }
+label { display: grid; gap: 4px; font-size: 14px; color: var(--muted); }
+input, select {
+  font: inherit; color: var(--text); background: var(--bg);
+  padding: 12px; border-radius: 10px; border: 1px solid var(--border);
+}
+.form-msg { margin: 0; min-height: 1.5em; font-size: 14px; }
+.foot { margin-top: 24px; text-align: center; font-size: 13px; color: var(--muted); }
+.foot a { color: var(--brand); }
